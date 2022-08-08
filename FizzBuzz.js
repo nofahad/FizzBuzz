@@ -1,20 +1,21 @@
 /*function to print the numbers 1 to 100 replacing all multiples of 3 with the word "Fizz", multiples of 5 with the word "Buzz" 
 and the multiples of 3 and 5 with the word "FizzBuzz". Replaces multiples of 7 with "Bang", multiples of 7 and 3 with "FizzBang
-, multples of 7 and 5 with "BuzzBang". Replaces multiples of 11 with Bong. Replaces multiples of 13 with Fezz*/
+, multples of 7 and 5 with "BuzzBang". Replaces multiples of 11 with Bong. Replaces multiples of 13 with Fezz. Reverses the print
+for multiples of 17*/
 
 function PrintFizzBuzzBangBongFezz(){
-    for(let i=1; i<=200; i++){
-        if(i%3 === 0 && i%5 !==0 && i%7 !==0 && i%11 !==0 && i%13 !==0){ 
+    for(let i=1; i<=600; i++){
+        if(i%3 === 0 && i%5 !==0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
             console.log('Fizz \n')
-        }else if(i%3 !== 0 && i%5 ===0 && i%7 !==0 && i%11 !==0 && i%13 !==0){ 
+        }else if(i%3 !== 0 && i%5 ===0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
             console.log('Buzz \n')
-        }else if(i%3 === 0 && i%5 === 0 && i%13 !==0){ 
+        }else if(i%3 === 0 && i%5 === 0 && i%13 !==0 && i%17 !==0){ 
             console.log('FizzBuzz \n')
-        }else if(i%7 === 0 && i%3 !==0 && i%5 !==0 && i%11 !==0 && i%13 !==0){ 
+        }else if(i%7 === 0 && i%3 !==0 && i%5 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
             console.log('Bang \n')
-        }else if(i%3 === 0 && i%7 ===0 && i%13 !==0){ 
+        }else if(i%3 === 0 && i%7 ===0 && i%13 !==0 && i%17 !==0){ 
             console.log('FizzBang \n')
-        }else if(i%5 ===0 && i%7 ===0 && i%13 !==0){ 
+        }else if(i%5 ===0 && i%7 ===0 && i%13 !==0 && i%17 !==0){ 
             console.log('BuzzBang \n')
         }else if(i%11 === 0 && i%13 !==0){ 
             console.log('Bong \n')
@@ -34,6 +35,12 @@ function PrintFizzBuzzBangBongFezz(){
             console.log('FizzFezzBang \n')
         }else if(i%13 === 0 && i%5 ===0 && i%7 ===0){ 
             console.log('FezzBuzzBang \n')
+        }else if(i%17 === 0 && i%3 === 0 && i%5 === 0){ 
+            console.log('BuzzFizz \n')
+        }else if(i%17 === 0 && i%3 === 0 && i%7 ===0){ 
+            console.log('BangFizz \n')
+        }else if(i%17 === 0 && i%5 ===0 && i%7 ===0){ 
+            console.log('BangBuzz \n')
         }else{ 
             console.log(i + '\n')
         }
