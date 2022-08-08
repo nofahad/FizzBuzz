@@ -8,13 +8,13 @@ function PrintFizzBuzzBangBong(){
             console.log('Fizz \n')
         }else if(i%3 !== 0 && i%5 ===0 && i%7 !==0 && i%11 !==0){ 
             console.log('Buzz \n')
-        }else if(i%15 === 0){ 
+        }else if(i%3 === 0 && i%5 === 0){ 
             console.log('FizzBuzz \n')
         }else if(i%7 === 0 && i%3 !==0 && i%5 !==0 && i%11 !==0){ 
             console.log('Bang \n')
-        }else if(i%21 === 0){ 
+        }else if(i%3 === 0 && i%7 ===0 && i%5 !==0 && i%11 !==0){ 
             console.log('FizzBang \n')
-        }else if(i%35 === 0){ 
+        }else if(i%3 !== 0 && i%5 ===0 && i%7 ===0 && i%11 !==0){ 
             console.log('BuzzBang \n')
         }else if(i%11 === 0){ 
             console.log('Bong \n')
