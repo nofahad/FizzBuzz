@@ -1,10 +1,16 @@
-/*function to print the numbers 1 to 100 replacing all multiples of 3 with the word "Fizz", multiples of 5 with the word "Buzz" 
+/*function to print the numbers 1 to num (num is the user input) replacing all multiples of 3 with the word "Fizz", multiples of 5 with the word "Buzz" 
 and the multiples of 3 and 5 with the word "FizzBuzz". Replaces multiples of 7 with "Bang", multiples of 7 and 3 with "FizzBang
 , multples of 7 and 5 with "BuzzBang". Replaces multiples of 11 with Bong. Replaces multiples of 13 with Fezz. Reverses the print
 for multiples of 17*/
 
+const readline =require('readline-sync');
+
 function PrintFizzBuzzBangBongFezz(){
-    for(let i=1; i<=600; i++){
+
+    console.log('Please enter your maximum number');
+    const num = readline.prompt();
+    
+    for(let i=1; i<=num; i++){
         if(i%3 === 0 && i%5 !==0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
             console.log('Fizz \n')
         }else if(i%3 !== 0 && i%5 ===0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
