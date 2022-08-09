@@ -11,42 +11,42 @@ function PrintFizzBuzzBangBongFezz(){
     const num = readline.prompt();
     
     for(let i=1; i<=num; i++){
-        if(i%3 === 0 && i%5 !==0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
-            console.log('Fizz \n')
-        }else if(i%3 !== 0 && i%5 ===0 && i%7 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
-            console.log('Buzz \n')
-        }else if(i%3 === 0 && i%5 === 0 && i%13 !==0 && i%17 !==0){ 
+        if(i%17 === 0 && i%5 === 0 && i%3 === 0){ 
+            console.log('BuzzFizz \n')
+        }else if(i%17 === 0 && i%7 === 0 && i%3 ===0){ 
+            console.log('BangFizz \n')
+        }else if(i%17 === 0 && i%7 ===0 && i%5 ===0){ 
+            console.log('BangBuzz \n')
+        }else if(i%13 === 0 && i%5 ===0 && i%3 === 0){ 
+            console.log('FizzFezzBuzz \n')
+        }else if(i%13 === 0 && i%7 ===0 && i%3 ===0){ 
+            console.log('FizzFezzBang \n')
+        }else if(i%13 === 0 && i%7 === 0 && i%5 ===0){ 
+            console.log('FezzBuzzBang \n')
+        }else if(i%5 === 0 && i%3 ===0){ 
             console.log('FizzBuzz \n')
-        }else if(i%7 === 0 && i%3 !==0 && i%5 !==0 && i%11 !==0 && i%13 !==0 && i%17 !==0){ 
-            console.log('Bang \n')
-        }else if(i%3 === 0 && i%7 ===0 && i%13 !==0 && i%17 !==0){ 
+        }else if(i%7 === 0 && i%3 ===0){ 
             console.log('FizzBang \n')
-        }else if(i%5 ===0 && i%7 ===0 && i%13 !==0 && i%17 !==0){ 
+        }else if(i%7 ===0 && i%5 ===0){ 
             console.log('BuzzBang \n')
-        }else if(i%11 === 0 && i%13 !==0){ 
-            console.log('Bong \n')
-        }else if(i%13 === 0 && i%3 !== 0 && i%5 !==0 && i%7 !==0 && i%11 !==0){ 
-            console.log('Fezz \n')
+        }else if(i%13 === 0 && i%11 ===0){ 
+            console.log('FezzBong \n')
+        }else if(i%13 === 0 && i%7 === 0){ 
+            console.log('FezzBang \n')
         }else if(i%13 === 0 && i%3===0){ 
             console.log('FizzFezz \n')
         }else if(i%13 === 0 && i%5===0){ 
             console.log('FezzBuzz \n')
-        }else if(i%13 === 0 && i%7===0){ 
-            console.log('FezzBang \n')
-        }else if(i%13 === 0 && i%11===0){ 
-            console.log('FezzBong \n')
-        }else if(i%13 === 0 && i%3 === 0 && i%5 === 0){ 
-            console.log('FizzFezzBuzz \n')
-        }else if(i%13 === 0 && i%3 === 0 && i%7 ===0){ 
-            console.log('FizzFezzBang \n')
-        }else if(i%13 === 0 && i%5 ===0 && i%7 ===0){ 
-            console.log('FezzBuzzBang \n')
-        }else if(i%17 === 0 && i%3 === 0 && i%5 === 0){ 
-            console.log('BuzzFizz \n')
-        }else if(i%17 === 0 && i%3 === 0 && i%7 ===0){ 
-            console.log('BangFizz \n')
-        }else if(i%17 === 0 && i%5 ===0 && i%7 ===0){ 
-            console.log('BangBuzz \n')
+        }else if(i%13 === 0){ 
+            console.log('Fezz \n')
+        }else if(i%11===0){ 
+            console.log('Bong \n')
+        }else if(i%7 === 0){ 
+            console.log('Bang \n')
+        }else if(i%5 === 0){ 
+            console.log('Buzz \n')
+        }else if(i%3 === 0){ 
+            console.log('Fizz \n')
         }else{ 
             console.log(i + '\n')
         }
